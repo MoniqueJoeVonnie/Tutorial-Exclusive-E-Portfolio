@@ -17,7 +17,16 @@ section {
     background-color: rgb(245, 245, 245);
 }
 
+.title {
+    font-size: 72px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
 
+.title--secondary {
+    color: #d30071;
+}
 
 /*
 
@@ -36,6 +45,7 @@ LANDING PAGE
     width: 100%;
     max-width: 1000px;
 }
+
 
 /*
 
