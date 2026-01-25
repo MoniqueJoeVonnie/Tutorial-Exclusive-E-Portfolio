@@ -14,7 +14,7 @@ function contact(event) {
     //         console.log('this worked1')
     //     })
     const loading = document.querySelector(' .modal__overlay--loading')
-        const sucess = document.querySelector(' .modal__overlay--success')
+        const success = document.querySelector(' .modal__overlay--success')
     loading.classList += " modal__overlay--visible";
     setTimeout(() => {
      loading.classList.remove("modal__overlay--visible");
