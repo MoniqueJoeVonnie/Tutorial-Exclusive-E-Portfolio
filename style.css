@@ -35,11 +35,12 @@ input, textarea {
     background-color: #242424;
     color: #fff;
     outline: none;
-    border: 3 px solid #c0c4cc;
+    border: 3px solid #c0c4cc;
     border-top: none;
     border-left: none;
     border-right: none;
     height: 40px;
+    transition: all 300ms ease;
 }
 
 textarea {
@@ -52,6 +53,14 @@ textarea {
 label {
     font-size: 14px;
     font-weight: bold;
+}
+
+input:hover, textarea:hover {
+    border-color: #d30071;
+}
+
+input:focus, textarea:focus {
+    border-color: #d30071;
 }
 
 .container {
@@ -281,6 +290,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .modal__about {
@@ -336,7 +346,7 @@ nav {
     font-size: 14px;
 }
 
-modal__para {
+.modal__para {
     margin-bottom: 12px;
     line-height: 1.75;
 }
@@ -354,8 +364,65 @@ modal__para {
     max-width: 240px;
     padding: 12px 24px;
     font-size: 20px;
+    transition: all 300ms ease;
 }
 
+.form__submit:hover {
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.form__submit:active {
+    border-color: #d30071;
+    color: #d30071
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    font-size: 88px;
+    z-index: -1;
+}
+
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-solid.fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+}
 
 /*
 
