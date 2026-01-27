@@ -24,12 +24,12 @@ function contact(event) {
         })
 }
 
-let isModalOpen = false;
+let ismodalOpen = false;
 function toggleModal() {
     if (ismodalOpen) {
-        isModalOpen = false
+        ismodalOpen = false
         return document.body.classList.remove("modal--open");
     }
-    isModalOpen = true;
+    ismodalOpen = true;
     document.body.classList += " modal--open";
 }
