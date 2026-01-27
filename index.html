@@ -36,7 +36,7 @@
                        link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                        nav__link--anchor
                        link__hover-effect
@@ -59,7 +59,7 @@
                 <h1 class="title Neon">I'm Monique.</h1>
                 <p class="header__para">
                     I am a <b class="Neon">Frontend Software Engineer</b> focused on building responsive, accessible, and user-centered web applications with clean, performant code.
-                    Here's a bit more <b class="Neon">about me</b>.
+                    Here's a bit more <b class="Neon click" onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://google.com" target="_blank" class="social__link click">
@@ -74,7 +74,7 @@
                 </div>  
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -109,6 +109,8 @@
                 </div>
             </div>
          <div class="modal__half modal__contact">
+             <i class="fa-solid fa-xmark__exit click" onclick="toggleModal()"></i>
+
             <h3 class="modal__title modal__title--contact">
                 Let's have a chat!
             </h3>
@@ -118,11 +120,11 @@
             <form id="contact__form" onsubmit="contact(event)">
                             <div class="form__item">
                                 <label class="form__item--label">Name</label>
-                                <input class="input" name="name" type="text"><input>
+                                <input class="input" name="name" type="text">
                             </div>
                             <div class="form__item">
                                 <label class="form__item--label">Email</label>
-                                <input class="input" name="email" type="email"><input>
+                                <input class="input" name="email" type="email">
                             </div>
                             <div class="form__item">
                                 <label class="form__item--label">Message</label>
@@ -139,7 +141,7 @@
                 Thanks for the message!  Looking forward to speaking to you soon.
             </div>
             </div>
-           <i class="fa-solid fa-xmark click"></i>
+           
         </div>
     </section>    
     <section id="projects">
