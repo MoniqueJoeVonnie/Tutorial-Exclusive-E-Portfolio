@@ -157,15 +157,22 @@ nav,
 .dark-theme section {
     background-color: #242424;
 }
-.dark-theme #personal-log0 {
+.dark-theme #personal-logo {
     filter: none;
 }
 .dark-theme .scroll__icon {
     border-color: white;
 }
-.dark-theme .scroll__icon::after {
+.dark-theme .scroll__icon::after 
+.dark-theme .link__hover-effect--black::after {
     background-color: white;
 }
+
+.dark-theme .scroll__icon::after 
+.dark-theme .link__hover-effect--white::after {
+    background-color: white;
+}
+
 .dark-theme .mail__btn {
     background-color: white;
     color: #242424;
@@ -619,4 +626,78 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color: white;
+}
+
+
+/*
+
+    PROJECTS
+
+shapes on the first row 
+height = 15vh
+
+shapes on the second row 
+height = 50vh
+
+shapes on the third row 
+height = 80vh
+
+
+shapes on the first colum 
+width = 5 vw
+
+shapes on the second colum 
+width = 50 vw
+
+shapes on the third colum 
+width = 80 vw
+*/
+
+.shape {
+    position: fixed
+}
+
+.shape--0 {
+    top: 15vh;
+    left: 5vh;
+}
+
+.shape--1 {
+    top: 15vh;
+    left: 50vh;
+}
+
+.shape--2 {
+    top: 15vh;
+    left: 80vh;
+}
+
+.shape--3 {
+    top: 50vh;
+    left: 5vh;
+}
+
+.shape--4 {
+    top: 50vh;
+    left: 50vh;
+}
+
+.shape--5 {
+    top: 50vh;
+    left: 80vh;
+}
+
+.shape--6 {
+    top: 80vh;
+    left: 5vh;
+}
+
+.shape--7 {
+    top: 80vh;
+    left: 50vh;
+}
+
+.shape--8 {
+    top: 80vh;
+    left: 80vh;
 }
