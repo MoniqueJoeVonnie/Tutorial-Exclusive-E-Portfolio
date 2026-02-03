@@ -2,7 +2,7 @@ let ismodalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
-function moveBackgroundd(event) {
+function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape")
     const x = event.clientX * scaleFactor;
     const y = event.clientY * scaleFactor;
@@ -10,7 +10,7 @@ function moveBackgroundd(event) {
     for (let i = 0; i < shapes.length; ++i) {
         const isOdd = i % 2 !== 0;
         const boolInt = isOdd ? -1 : 1;
-        shapes[i].style.transform = 'translate(${x * boolInt}px, ${y * boolInt}px)'
+        shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
     }
 }
 
@@ -20,7 +20,7 @@ function toggleContrast() {
         document.body.classList += " dark-theme"
     }
     else {
-        document.body.classList.remove(" dark-theme")
+        document.body.classList.remove("dark-theme")
     }
 }
 
